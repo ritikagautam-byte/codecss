@@ -1,0 +1,15 @@
+Features{
+ color:red;
+}
+
+.verified{
+    color:green;
+}
+
+.not-verified{
+    color:blue;
+}
+
+.Black-listed{
+    color:red;
+}
