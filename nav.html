@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Navigation Bar</title>
+    <style>
+        .border{
+    
+            background:black;
+            padding:20px;
+        
+           
+        }
+
+        a{
+            color: greenyellow;
+            text-decoration: none;/*for the not underline*/
+            margin:30px;/*for space between content*/
+            text-transform: capitalize;
+        }
+
+        .container{
+
+            display: flex; /* for all content in same row*/
+        
+            margin:0 auto;
+
+            justify-content: center;/* for all the cards in the center*/
+            gap:20px;/* for gap bewtween each gap*/
+
+        }
+        .card{
+            background:lightgreen;
+            padding:50px;
+            height:100px;
+            margin:20px;
+            text-align:center;
+    
+        }
+
+        .pricing{
+            display: flex; /* for all content in same row*/
+        
+            margin:30px;
+
+            justify-content: center;/* for all the cards in the center*/
+            gap:20px;/* for gap bewtween each gap*/
+            
+            
+        }
+
+        .Plan{
+             padding:40px;
+             border:2px solid black;
+              background:lightyellow;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+
+   <nav class="border">
+       <a href="#">Home</a>
+       <a href="#">courses</a>
+       <a href="#">Projects</a>
+       <a href="#">Contact us</a>
+   </nav>
+
+   <div class="container">
+
+   <div class="card">Users</div>
+
+   <<div class="card">Revenue</div>
+
+   <div class="card">Orders</div>
+
+</div>
+
+
+<div class="pricing">
+    <div class="Plan">Basic Pay</div>
+    <div class="Plan"> Pro Pay</div>
+</div>
+
+
+
+</body>
+</html>
