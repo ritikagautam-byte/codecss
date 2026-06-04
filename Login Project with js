@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>LOG IN</title>
+    <style>
+     body{
+        margin:20px auto;
+        text-align: center;
+        align-items: center;
+        padding:120px;
+        
+        
+     }
+
+     .login-container{
+       background-color: azure;
+       padding:20px;
+     }
+    .login-container h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size:35px;
+        color:blue;
+        
+     }
+     .input-group{
+    
+        
+        padding: 10px;
+       
+
+     }
+
+     .input--group{
+        margin:20px;
+    
+
+     }
+    .input-group label{
+        display:block;
+        color:orange;
+        margin:5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    }
+.input--group label{
+        display:block;
+        color:orange;
+        margin:5px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:30px;
+
+    }
+   .input-group input{
+    width:300px;
+    height:50px;
+
+    padding-right:20px;
+    border:2px solid #ddd;
+    border-radius:25px;
+
+    margin-bottom:0 auto;
+    background:white;
+    
+}
+.input--group input{
+    width:300px;
+    height:50px;
+
+    padding-right:20px;
+    border:2px solid #ddd;
+    border-radius:25px;
+
+    margin-bottom:0 auto;
+    background:white;
+    
+}
+
+   
+
+    .login-btn {
+        width: 50%;
+        padding: 20px;
+        background: #4facfe;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-btn:hover{
+        background-color: orange;
+    }
+
+    .links{
+        margin:20px;
+        color:olivedrab;
+        font-family: 'Times New Roman', Times, serif;
+
+        
+    }
+    .links {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #4facfe;
+        font-size: 14px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    </style>
+
+<script>
+    function validateForm() {
+    
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+    
+        if(email === "" || password === "") {
+            alert("Please fill all fields!");
+            return false;
+        }
+    
+        if(password.length < 6) {
+            alert("Password must be at least 6 characters long!");
+            return false;
+        }
+    
+        alert("Login Successful!");
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>LOG IN</h2>
+
+        <form onsubmit="return validateForm()">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="Email" id="email" placeholder="Enter your email" required>
+
+            </div>
+
+            <div class="input--group">
+                <label>Password</label>
+                <input type="Password"  id="Password" placeholder="Enter your Password" required>
+            </div>
+
+            <button type="submit"class="login-btn">Login</button>
+
+            <div class="links">
+
+                <a href="#">Forgot Password</a><br>
+                <a href="#">Create Account</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
