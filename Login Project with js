@@ -118,6 +118,7 @@
     </style>
 
 <script>
+   alert("Fill the details for login");
     function validateForm() {
     
         let email = document.getElementById("email").value;
